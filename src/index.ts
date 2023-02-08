@@ -1,2 +1,5 @@
+export { classnames } from './classnames';
 export { formatThousand } from './formatThousand';
-export { omit } from './omit';
+export { getStyle } from './getStyle';
+export * from './objects';
+export * from './types';
