@@ -3,6 +3,9 @@
 用于准确判断数据类型。
 
 ```tsx | pure
+/**
+ * defaultShowCode: true
+ */
 import {
   isArray,
   isBlob,

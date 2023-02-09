@@ -53,6 +53,7 @@
     "@types/jest": "^29.4.0",
     "@types/jsdom": "^21.1.0",
     "@umijs/lint": "^4.0.0",
+    "antd": "^5.2.0",
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
