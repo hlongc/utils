@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals';
 import { omit, pick } from './index';
 
 describe('omit useage', () => {
@@ -10,7 +9,6 @@ describe('omit useage', () => {
       d: 4,
     };
     const ret = omit(obj, ['a', 'd']);
-    console.log('ret omit', ret);
     expect('a' in ret).toBe(false);
     expect('b' in ret).toBe(true);
     expect('c' in ret).toBe(true);
@@ -27,7 +25,6 @@ describe('pick useage', () => {
       d: 4,
     };
     const ret = pick(obj, ['a', 'd']);
-    console.log('ret pick', ret);
     expect(ret['a']).toBe(1);
     expect('b' in ret).toBe(false);
     expect('c' in ret).toBe(false);

@@ -3,9 +3,6 @@
 类似于 typescript 中的 Omit 和 pick，并且能进行代码提示。
 
 ```tsx | pure
-/**
- * defaultShowCode: true
- */
 import { omit, pick } from 'ronnie-utils';
 
 const tmp = { a: 1, b: 2, c: 3, d: 4 };

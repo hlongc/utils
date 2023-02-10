@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals';
 import * as types from './index';
 
 describe('isString', () => {

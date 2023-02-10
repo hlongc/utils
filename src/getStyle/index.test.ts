@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals';
 import jsdom from 'jsdom';
 import { getStyle } from './index';
 

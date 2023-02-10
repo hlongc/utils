@@ -3,9 +3,6 @@
 用于准确判断数据类型。
 
 ```tsx | pure
-/**
- * defaultShowCode: true
- */
 import {
   isArray,
   isBlob,
@@ -33,3 +30,7 @@ console.log(isRegExp(reg));
 console.log(isString('123'));
 console.log(isUndefined(undefined));
 ```
+
+## api
+
+<API id="Foo"></API>

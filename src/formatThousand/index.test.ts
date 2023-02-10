@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals';
 import { formatThousand } from './index';
 
 describe('千分位格式化', () => {
