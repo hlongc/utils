@@ -30,7 +30,3 @@ console.log(isRegExp(reg));
 console.log(isString('123'));
 console.log(isUndefined(undefined));
 ```
-
-## api
-
-<API id="Foo"></API>
