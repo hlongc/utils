@@ -8,9 +8,9 @@ import { formatMoney } from 'ronnie-utils';
 const money = 12345678;
 
 console.log(formatMoney(money, 'yuan')); // '12,345,678.00元'
-console.log(formatMoney(money, 'yuan', ',', false)); // '12,345,678.00'
+console.log(formatMoney(money, 'yuan', false)); // '12,345,678.00'
 console.log(formatMoney(money, 'wan')); // '1234.57万元'
-console.log(formatMoney(money, 'wan', ',', false)); // '1234.57'
+console.log(formatMoney(money, 'wan', false)); // '1234.57'
 console.log(formatMoney(money, 'yi')); // '0.1235亿元'
-console.log(formatMoney(money, 'yi', ',', false)); // '0.1235'
+console.log(formatMoney(money, 'yi', false)); // '0.1235'
 ```
