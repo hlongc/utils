@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "常见工具函数",
   "license": "MIT",
-  "module": "dist/index.js",
+  "main": "lib/index.js",
+  "unpkg": "dist/index.min.js",
+  "module": "es/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -19,6 +21,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install",
     "prepublishOnly": "father doctor && npm run build",
+    "rollup": "rollup -c",
     "start": "npm run dev",
     "test": "jest --watch",
     "test:staged": "jest --bail --findRelatedTests"
@@ -55,6 +58,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@jest/globals": "^29.4.1",
     "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "@types/jest": "^29.4.0",
     "@types/jsdom": "^21.1.0",
@@ -72,12 +76,13 @@
     "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "rollup": "^3.15.0",
+    "rollup": "2.66.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "stylelint": "^14.9.1",
     "ts-jest": "^29.0.5",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "webpack-merge": "^5.8.0"
   },
   "peerDependencies": {
     "react": ">=16.9.0",

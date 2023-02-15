@@ -1,5 +1,6 @@
 export { classnames } from './classnames';
 export { clipboard } from './clipboard';
+export { generateEnumer } from './enum';
 export { formatMoney } from './formatMoney';
 export { formatThousand } from './formatThousand';
 export * from './fullscreen';
