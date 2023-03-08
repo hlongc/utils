@@ -1,4 +1,4 @@
-import { isArray, isObject, isString } from '../types';
+import { isArray, isObject, isString } from '../is';
 
 type classnamesArg =
   | string

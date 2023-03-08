@@ -7,6 +7,7 @@ import {
   isArray,
   isBlob,
   isEmptyObject,
+  isEmptyValue,
   isFile,
   isFunction,
   isNumber,
@@ -29,4 +30,5 @@ console.log(isObject({ a: 1 }));
 console.log(isRegExp(reg));
 console.log(isString('123'));
 console.log(isUndefined(undefined));
+console.log(isEmptyValue(undefined));
 ```

@@ -39,3 +39,35 @@ export function isFunction(obj: any): obj is (...args: any[]) => any {
 export function isEmptyObject(obj: any): boolean {
   return isObject(obj) && Object.keys(obj).length === 0;
 }
+
+/**
+ * 判断null 或者 undefined的情况 0 会正常返回
+ * @param target
+ * @returns
+ */
+export function isEmptyValue(value: any) {
+  return value === null || value === undefined;
+}
+
+/**
+ * 判断该文件是什么文件类型
+ * @param filename 包含后缀的文件名
+ * @param fullUrl 完整路径，如：https://www.xx.com/a.png
+ * @returns
+ */
+export const getFileTypeByFileName = (filename: string, fullUrl?: string) => {
+  const getExt = (str: string) => {
+    const matches = str.match(/\.\w+(?=[?#].+)/) || str.match(/\.\w+$/);
+    if (matches) {
+      return matches[0];
+    }
+  };
+  const ext = getExt(filename) || (fullUrl && getExt(fullUrl)) || '';
+  return {
+    isImage: /\.(png|jpe?g|gif|)$/i.test(ext),
+    isVideo: /\.(mp4|webm|ogg|flv|mov)$/i.test(ext),
+    isPdf: /\.pdf$/i.test(ext),
+    isExcel: /\.xls(x|_)?/i.test(ext),
+    isWord: /\.doc(x|_)?/i.test(ext),
+  };
+};

@@ -17,3 +17,13 @@ export type ElementOf<T> = T extends (infer E)[]
   : T extends readonly (infer F)[]
   ? F
   : never;
+
+type noop = (this: any, ...args: any[]) => any;
+
+/**
+ * 剔除T的其他属性，只保留函数
+ */
+export type PickFunction<T extends noop> = (
+  this: ThisParameterType<T>,
+  ...args: Parameters<T>
+) => ReturnType<T>;

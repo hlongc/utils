@@ -1,10 +1,11 @@
 export { classnames } from './classnames';
 export { clipboard } from './clipboard';
 export { generateEnumer } from './enum';
-export { formatMoney } from './formatMoney';
-export { formatThousand } from './formatThousand';
 export * from './fullscreen';
 export { getStyle } from './getStyle';
+export * from './is';
+export * from './number';
+export * from './number-precision';
 export * from './objects';
 export * from './tuple';
-export * from './types';
+export { uid } from './uid';
